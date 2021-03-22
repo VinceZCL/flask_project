@@ -1,20 +1,26 @@
-<h1>Hello World</h1>
+{% extends "base.html" %}
 
-<p>Lorem Ipsum</p>
+{% block content %}
 
-{{ txt|title|safe }}
+    <h1>Hello World</h1>
 
-<h3>Random List</h3>
+    <p>Lorem Ipsum</p>
 
-{% for i in lst %}
-    {% if i == 420 %}
-        {{ i + 69000 }}
-        {{ i|string + "69" }}
-    {% else %}
-        {{ i }}
-    {% endif %}
-    <br>
-{% endfor %}
+    {{ txt|title|safe }}
 
-{{ lst.1 }}
-{{ 6*9 }}
+    <h3>Random List</h3>
+
+    {% for i in lst %}
+        {% if i == 420 %}
+            {{ i + 69000 }}
+            {{ i|string + "69" }}
+        {% else %}
+            {{ i }}
+        {% endif %}
+        <br>
+    {% endfor %}
+
+    {{ lst.1 }}
+    {{ 6*9 }}
+
+{% endblock %}
