@@ -1,0 +1,20 @@
+<h1>Hello World</h1>
+
+<p>Lorem Ipsum</p>
+
+{{ txt|title|safe }}
+
+<h3>Random List</h3>
+
+{% for i in lst %}
+    {% if i == 420 %}
+        {{ i + 69000 }}
+        {{ i|string + "69" }}
+    {% else %}
+        {{ i }}
+    {% endif %}
+    <br>
+{% endfor %}
+
+{{ lst.1 }}
+{{ 6*9 }}
