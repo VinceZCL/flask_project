@@ -12,7 +12,7 @@ class NameForm(FlaskForm):
     name = StringField("What is your name", validators=[DataRequired()])
     submit = SubmitField("Submit")
 
-    ## Fields
+    	## Fields
 	# BooleanField
 	# DateField
 	# DateTimeField
